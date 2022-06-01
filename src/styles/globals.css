@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+.font-lora {
+  font-family: "Lora";
+}
+
+.login-register-container {
+  @apply w-11/12 max-w-[649px] pt-16 md:shadow-sm md:shadow-[rgba(0,0,0,0.08)] md:py-[75px] md:mt-[80px];
+}
+
+.login-register-container-inside {
+  @apply m-auto max-w-[499px];
+}
+
+.heading-1 {
+  @apply text-text-primary font-medium text-xl mb-[10px] md:mb-5 font-lora md:text-[40px];
+}
+
+.heading-2 {
+  @apply text-text-secondary text-sm mb-8 md:text-base;
+}
+
+.form-input {
+  @apply border-input-border border-solid border-[1px] py-[6px] md:py-2.5 md:text-xl px-4 w-11/12 rounded-[4.8px] mb-6;
+}
+
+.form-submit-button {
+  @apply py-[8px] md:py-[14px] px-4 bg-primary-background text-white text-base md:text-xl rounded-[4.8px] w-11/12;
+}
